@@ -1,0 +1,8 @@
+prefix=/home/modlab/Documents/ros-wksp/devel
+
+Name: learning_tf
+Description: Description of learning_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/modlab/Documents/ros-wksp/devel/lib 
+Requires: 
