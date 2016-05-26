@@ -25,7 +25,8 @@ if __name__ == '__main__':
 			# lookupTransform(target_frame, source_frame, time) -> (position, quaternion)
 			# transform target_frame to source_frame
 			# position and quaternion being returned as tuples of 3 and 4 respectively
-			(trans, rot) = listener.lookupTransform('/robert', '/turtle1', rospy.Time(0)) # Time(0) being latest time
+			# (trans, rot) = listener.lookupTransform('/robert', '/turtle1', rospy.Time(0)) # Time(0) being latest time
+			(trans, rot) = listener.lookupTransform('/robert', '/carrot1', rospy.Time(0)) # for carrot demonstration 
 		except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
 			continue
 
