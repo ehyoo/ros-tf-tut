@@ -14,7 +14,7 @@ def handle_turtle_pose(msg, turtlename):
 
 if __name__ == '__main__':
 	rospy.init_node('turtle_tf_broadcaster')
-	turtlename = rospy.get_param('~turtle') # from the parameter server- either turtle1 or turtle2 
+	turtlename = rospy.get_param('~turtle') # from the launchfile
 	# subscribes to 'turtle<#>/pose' 
 	# then runs handle_turtle_pose  on every message
 	rospy.Subscriber("/%s/pose" % turtlename, turtlesim.msg.Pose, handle_turtle_pose, turtlename)
